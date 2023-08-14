@@ -1,0 +1,151 @@
+/* -=-=-=-=-=-=-=-=-=OpenProps=-=-=-=-=-=-=-=-=- */
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+@font-face {
+    font-family: "Poppins";
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsI";
+    src: url(assets/fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsB";
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsBI";
+    src: url(assets/fonts/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsXB";
+    src: url(assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "PoppinsXBI";
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+* {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-family: "PoppinsB";
+    letter-spacing: .5em;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    color: #888888;
+}
+
+input {
+    appearance: textfield;
+    font-family: "PoppinsB";
+    color: #888888;
+    background-color: white;
+    border: 1px solid #88888850;
+    font-size: 26px;
+    padding-left: 1rem;
+    color: black;
+    border-radius: 10px;
+    height: 60px;
+}
+
+#card {
+    position: relative;
+    top: 5em;
+    height: 600px;
+    width: 700px;
+    background-color: white;
+    border-radius: 20px 20px 25% 20px;
+    padding: 48px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    column-gap: 2em;
+    row-gap: .5em;
+}
+
+#middle {
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    width: 69px;
+    height: 69px;
+    background-color: #864CFF;
+}
+
+img {
+    height: 46px;
+    width: 44px;
+}
+
+#line {
+    width: 630px;
+    border-top: 1px solid #00000030;
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.all {
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+.n {
+    font-family: "PoppinsXBI";
+    color: #864CFF;
+    font-size: 90px
+}
+
+.t {
+    font-family: "PoppinsXBI";
+    color: black;
+    font-size: 90px
+}
+
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+input:focus,
+input:hover {
+    border: solid 1px #864CFF;
+    caret-color: #864CFF;
+}
+
+button:hover {
+    background-color: black;
+    cursor: pointer;
+}

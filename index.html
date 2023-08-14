@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+    <div id="card">
+
+        <form id="form" action="/action.php" action="submitscript.php" target="dummyframe">
+
+            <label for="day">DAY</label>
+            <label for="month">MONTH</label>
+            <label for="year">YEAR</label>
+            <input class="input" name="day" id="day" max="31" min="1" type="number" placeholder="DD" required/>
+            <input class="input" name="month" id="month" max="12" min="1" type="number" placeholder="MM" required/>
+            <input class="input" name="year" id="year" max="2023" min="0" type="number" placeholder="YYYY" required/>
+
+            <div id="middle">
+                <div id="line"></div>
+                <button onclick="onClick()" type="submit"><img src="assets/images/icon-arrow.svg" alt="Sumbit"></button>
+            </div>
+        </form>
+
+        <div id="results">
+            <div class="all" id="yearsAll">
+                <h1 class="n" id="yearsN">--</h1>
+                <h1 class="t" id="yearsT">years</h1>
+            </div>
+            <div class="all" id="monthsAll">
+                <h1 class="n" id="monthsN">--</h1>
+                <h1 class="t" id="monthsT">months</h1>
+            </div>
+            <div class="all" id="daysAll">
+                <h1 class="n" id="daysN">--</h1>
+                <h1 class="t" id="daysT">days</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+
+    <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div>
+</body>
+
+</html>
