@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
+
     <script src="script.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
@@ -29,12 +30,15 @@
 
         <form id="form" action="/action.php" action="submitscript.php" target="dummyframe">
 
-            <label for="day">DAY</label>
-            <label for="month">MONTH</label>
-            <label for="year">YEAR</label>
-            <input class="input" name="day" id="day" max="31" min="1" type="number" placeholder="DD" required/>
-            <input class="input" name="month" id="month" max="12" min="1" type="number" placeholder="MM" required/>
-            <input class="input" name="year" id="year" max="2023" min="0" type="number" placeholder="YYYY" required/>
+            <label id="labelD" for="day">DAY</label>
+            <label id="labelM" for="month">MONTH</label>
+            <label id="labelY" for="year">YEAR</label>
+            <input class="input" name="day" id="day" type="number" placeholder="DD" required/>
+            <input class="input" name="month" id="month" type="number" placeholder="MM" required/>
+            <input class="input" name="year" id="year" type="number" placeholder="YYYY" required/>
+            <label class="error" id="errorD" for="day">DAY</label>
+            <label class="error" id="errorM" for="month">MONTH</label>
+            <label class="error" id="errorY" for="year">YEAR</label>
 
             <div id="middle">
                 <div id="line"></div>

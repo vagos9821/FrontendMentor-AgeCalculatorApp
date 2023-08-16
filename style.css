@@ -72,6 +72,13 @@ input {
     height: 60px;
 }
 
+.error {
+    font-family: "PoppinsI";
+    letter-spacing: 0;
+    color: red;
+    opacity: 0;
+}
+
 #card {
     position: relative;
     top: 5em;
